@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+const errorString2 = "This is required";
 class Field extends Component{
     render(){
         return(
@@ -10,23 +10,22 @@ class Field extends Component{
                         id={this.props.name}
                         type={this.props.type} 
                         placeholder={this.props.placeholder}
-                        required="required"
-                        data-validation-required-message={`Please Enter ${this.props.placeholder}.`}
-                        value={this.props.value}
-                        onChange={e => this.props.onChange(e)}
-                    />
+                        name={this.props.name}
+                        onChange={this.props.onChange}
+                        onBlur={this.props.onBlur}
+                    />  
                     : <textarea 
                         className="form-control"     
                         id={this.props.name}
-                        //type={this.props.type} 
                         placeholder={this.props.placeholder}
-                        required="required"
-                        data-validation-required-message="Please enter a message."
-                        value={this.props.value}
-                        onChange={e => this.props.onChange(e)}
-                    />
+                        name={this.props.name}
+                        onChange={this.props.onChange}
+                        onBlur={this.props.onBlur}
+                    />  
                 }
-                <p className="help-block text-danger"></p>
+                <p className="help-block text-danger">
+                    <span>{`Touched: ${this.props.touched} Error: ${this.props.errors}`}</span>
+                </p>
             </div>
         );
     }

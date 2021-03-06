@@ -12,19 +12,19 @@ class App extends Component {
       <Router>
         <PageWrapper>
           <Route 
-            exact="true"
+            exact={true}
             path="/"
             component={Home} 
           />
 
           <Route 
-            exact="true"
+            exact={true}
             path="/about"
             component={About}
           />
 
           <Route 
-            exact="true"
+            //exact={true}
             path="/contact"
             component={Contact}
           />
