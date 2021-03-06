@@ -1,6 +1,6 @@
 import PageWrapper from './components/PageWrapper';
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 // Pages
 import Home from './components/pages/Home';
@@ -12,19 +12,19 @@ class App extends Component {
       <Router>
         <PageWrapper>
           <Route 
-            exact={true}
+            exact="true"
             path="/"
             component={Home} 
           />
 
           <Route 
-            exact={true}
+            exact="true"
             path="/about"
             component={About}
           />
 
           <Route 
-            //exact={true}
+            exact="true"
             path="/contact"
             component={Contact}
           />

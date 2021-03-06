@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Field from '../common/Field';
 import {withFormik} from 'formik';
+import * as Yup from 'yup';
 
 const fields = {
     sections: [
@@ -27,6 +28,7 @@ class Contact extends Component{
                     </div>
                     <form id="contactForm" name="sentMessage" noValidate="novalidate" onSubmit={this.props.handleSubmit}>
                         <div className="row align-items-stretch mb-5">
+                                
                                 {fields.sections.map((section, sectionIndex) => {
                                     return (
                                         <div className="col-md-6" key={sectionIndex}> 
@@ -38,13 +40,14 @@ class Contact extends Component{
                                                             name={field.name}
                                                             onChange={this.props.handleChange}
                                                             onBlur={this.props.handleBlur}
-                                                            touched={this.props.touched[field.name]}
+                                                            touched={(this.props.touched[field.name])}
                                                             errors={this.props.errors[field.name]}
                                                 />
                                             })}
                                         </div>
                                     )
                                 })}
+
                         </div>
                         <div className="text-center">
                             <div id="success"></div>
@@ -66,26 +69,19 @@ export default withFormik({
         message: ''
     }),
 
-    validate: (values) => {
-        const errors = {};
-        Object.keys(values).map(v => {
-            if(!values[v]){
-                errors[v] = "Required";
-            }
-        })
-        return errors;
-    },
+    validationSchema: Yup.object().shape({
+        name: Yup.string().required("We need your name"),
+        email: Yup.string().email("Please enter a valid email").required("We need your email"),
+        phone: Yup.string().min(10, "Must be at least 10 digits")
+                           .max(15, "Your phone number is too long")
+                           .required("We need your phone number"),
+        message: Yup.string().min(50, "Please enter at least 50 characters")
+                             .max(500, "This message is too long")
+                             .required("Message is required")
+    }),
 
     handleSubmit: (values, {setSubmitting}) => {
         alert("You've submitted the form!", JSON.stringify(values));
     },
-
-    handleBlur: (values) => {
-        const touched = {}
-        Object.keys(values).map(v => {
-            touched[v] = true;
-        })
-        return touched;
-    }
 
 })(Contact);

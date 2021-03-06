@@ -10,6 +10,7 @@ class Field extends Component{
                         id={this.props.name}
                         type={this.props.type} 
                         placeholder={this.props.placeholder}
+                        required="required"
                         name={this.props.name}
                         onChange={this.props.onChange}
                         onBlur={this.props.onBlur}
@@ -18,13 +19,16 @@ class Field extends Component{
                         className="form-control"     
                         id={this.props.name}
                         placeholder={this.props.placeholder}
+                        required="required"
                         name={this.props.name}
                         onChange={this.props.onChange}
                         onBlur={this.props.onBlur}
                     />  
                 }
                 <p className="help-block text-danger">
-                    <span>{`Touched: ${this.props.touched} Error: ${this.props.errors}`}</span>
+                    {(this.props.touched && this.props.errors) &&
+                        <span>{this.props.errors}</span>
+                    }
                 </p>
             </div>
         );
