@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 // Pages
 import Home from './components/pages/Home';
+import Resume from './components/pages/Resume';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 class App extends Component {
@@ -27,6 +28,12 @@ class App extends Component {
             exact="true"
             path="/contact"
             component={Contact}
+          />
+
+          <Route 
+            exact="true"
+            path="/resume"
+            component={Resume}
           />
         </PageWrapper>
       </Router>
