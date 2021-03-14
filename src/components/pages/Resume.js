@@ -14,28 +14,11 @@ class Resume extends Component {
                     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
                     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
                     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-                    <link href="resumeBS/css/styles.css" rel="stylesheet" />
+                    <link href="agencyBS/css/styles.css" rel="stylesheet" />
                 </head>
-                <body id="page-top">
-                    <nav className="navbar navbar-expand-lg navbar-dark bg-primary" id="sideNav">
-                        <a className="navbar-brand js-scroll-trigger" href="#page-top">
-                            <span className="d-block d-lg-none">Clarence Taylor</span>
-                            <span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
-                        </a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav">
-                                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
-                                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+                <body>
                     <div className="container-fluid p-0">
-                        <section className="resume-section" id="about">
+                        <section className="resume-section">
                             <div className="resume-section-content">
                                 <h1 className="mb-0">
                                     Clarence
@@ -210,10 +193,6 @@ class Resume extends Component {
                             </div>
                         </section>
                     </div>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-                    <script src="js/scripts.js"></script>
                 </body>
             </div>
         );

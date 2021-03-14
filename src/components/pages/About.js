@@ -12,7 +12,7 @@ class About extends Component {
                     showButton={false}
                     image={image}
                 />
-                <section className="page-section" id="about">
+                <section className="page-section">
                     <div className="container">
                         <div className="text-center">
                             <h2 className="section-heading text-uppercase">About</h2>
