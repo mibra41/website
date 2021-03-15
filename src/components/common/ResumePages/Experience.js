@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 class Experience extends Component{
     render(){
         return(
-            <section className="resume-section">
+            <section className="resume-section" >
                 <div className="resume-section-content">
-                    <h2 className="mb-5">Experience</h2>
+                    <h2 className="mb-5 text-primary">Experience</h2>
                     <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div className="flex-grow-1">
                             <h3 className="mb-0">Senior Web Developer</h3>

@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 class Skills extends Component{
     render(){
         return(
-            <section className="resume-section">
+            <section className="resume-section" >
                 <div className="resume-section-content">
-                    <h2 className="mb-5">Skills</h2>
+                    <h2 className="mb-5 text-primary">Skills</h2>
                     <div className="subheading mb-3">Programming Languages and Tools</div>
                     <ul className="list-inline dev-icons">
                         <li className="list-inline-item"><i className="fab fa-html5"></i></li>

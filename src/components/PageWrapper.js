@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import PageHeader from './common/PageHeader';
+import Footer from './common/Footer';
 
 class PageWrapper extends Component {
     constructor(props) {
@@ -32,8 +32,8 @@ class PageWrapper extends Component {
                     </div>
                     </div>
                 </nav>
-                <PageHeader value={this.state.value} paddingTop={this.state.paddingTop}></PageHeader>
                 {this.props.children}
+                <Footer></Footer>
             </div>
         );
     }

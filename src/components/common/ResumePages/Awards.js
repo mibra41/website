@@ -5,7 +5,7 @@ class Awards extends Component {
         return(
             <section className="resume-section">
                 <div className="resume-section-content">
-                    <h2 className="mb-5">Awards and Certifications</h2>
+                    <h2 className="mb-5 text-primary">Awards and Certifications</h2>
                     <ul className="fa-ul mb-0">
                         <li>
                             <span className="fa-li"><i className="fas fa-trophy text-warning"></i></span>

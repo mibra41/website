@@ -4,9 +4,11 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 // Pages
 import Home from './components/pages/Home';
+import Resources from './components/pages/Resources';
+import Blog from './components/pages/Blog';
+import Memories from './components/pages/Memories';
 import Resume from './components/pages/Resume';
 import About from './components/pages/About';
-import Contact from './components/pages/Contact';
 class App extends Component {
   render() {
     return (
@@ -23,11 +25,23 @@ class App extends Component {
             path="/about"
             component={About}
           />
-
+          
           <Route 
             exact="true"
-            path="/contact"
-            component={Contact}
+            path="/resources"
+            component={Resources}
+          /> 
+          
+          <Route 
+            exact="true"
+            path="/blog"
+            component={Blog}
+          />
+          
+          <Route 
+            exact="true"
+            path="/memories"
+            component={Memories}
           />
 
           <Route 
