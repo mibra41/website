@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-const errorString2 = "This is required";
 class Field extends Component{
     render(){
         return(

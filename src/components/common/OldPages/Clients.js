@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Client from './Client';
+import Client from './OldPages/Client';
 
 import envatoImage from '../assets/img/logos/envato.jpg';
 import creativeImage from '../assets/img/logos/creative-market.jpg';
