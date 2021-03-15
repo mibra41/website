@@ -10140,7 +10140,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
+    padding-top: 1rem;
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
@@ -20519,7 +20519,7 @@ h3 {
   }
 }
 body {
-  padding-top: 3.375rem;
+  padding-top: 0rem;
   color: #6c757d;
 }
 
@@ -20630,8 +20630,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 0;
+  padding-bottom: 0;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
@@ -20647,7 +20647,7 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
