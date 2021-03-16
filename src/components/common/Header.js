@@ -6,8 +6,8 @@ class Header extends Component {
         return(
             <header className="masthead">
                     <div className="container">
-                        <div className="masthead-heading text-uppercase">{this.props.title}</div>
-                        <div className="masthead-subheading">{this.props.subtitle}</div>
+                        <div className="masthead-heading text-uppercase text-primary">{this.props.title}</div>
+                        <div className="masthead-subheading text-primary">{this.props.subtitle}</div>
                         {this.props.showButton && <Link className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" to={this.props.link}>{this.props.buttonText}</Link>}
                     </div>
             </header>
